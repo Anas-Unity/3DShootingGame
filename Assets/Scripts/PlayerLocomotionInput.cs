@@ -6,6 +6,7 @@ public class PlayerLocomotionInput : MonoBehaviour, PlayerControls.IPlayerAction
 
     public PlayerControls _playerControls;
     public Vector2 _moveInput;
+    public Vector2 _lookInput;
 
 
     private void OnEnable()
@@ -30,27 +31,27 @@ public class PlayerLocomotionInput : MonoBehaviour, PlayerControls.IPlayerAction
     #region Controls
     public void OnAttack(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnCrouch(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        _lookInput = context.ReadValue<Vector2>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -60,17 +61,17 @@ public class PlayerLocomotionInput : MonoBehaviour, PlayerControls.IPlayerAction
 
     public void OnNext(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnPrevious(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     #endregion
 
