@@ -51,12 +51,12 @@ public class PlayerLocomotionInput : MonoBehaviour, PlayerControls.IPlayerAction
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        _lookInput = context.ReadValue<Vector2>();
+        _lookInput = context.ReadValue<Vector2>();      // this is used to get character values when we move our cursor 
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        _moveInput = context.ReadValue<Vector2>();
+        _moveInput = context.ReadValue<Vector2>();      // tis is used to get character values when moving
     }
 
     public void OnNext(InputAction.CallbackContext context)
